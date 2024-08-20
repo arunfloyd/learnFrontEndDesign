@@ -1,59 +1,69 @@
-# learnFrontEndDesign
-
-#REST API 
+# REST API Overview
 
 ![Overview About REST API](images/1.png)
 
-Architecture
+## Architecture
 
-![1st Tier](image.png)  
+### 1st Tier
+![1st Tier](image.png)
 
+### 2nd Tier
 ![2nd Tier](image-1.png)
- 
-![3 Tier](image-2.png)
 
-API - Application Programming Interface
-     A interface to communicate between two programmming services/language which can be done with API.
+### 3rd Tier
+![3rd Tier](image-2.png)
 
-REST API - Representaional State Transfer Application Programming Interface
+## What is an API?
 
-How the data should be represented in the transfer of data between two programmming services/language are represented
-by REST API.
-Using REST API communication between any to service can happen like client and server or database
+An **API** (Application Programming Interface) is an interface that facilitates communication between two programming services or languages. It enables data exchange and interaction across software.
 
-HTTP - Hyper Text Transfer Protocol 
-Which is a standard which helps to communicate data across the web services by how the data is to be excahnged
+## What is a REST API?
 
+**REST API** (Representational State Transfer Application Programming Interface) dictates how data should be represented and transferred between two services, such as between a client and a server or between services and a database.
 
+## What is HTTP?
 
-Benfits of REST API
+**HTTP** (HyperText Transfer Protocol) is a standard that helps in the communication of data across web services by defining how data is to be exchanged.
 
-![Benfits](image-3.png)
+## Benefits of REST API
 
-Building Blocks 
+![Benefits](image-3.png)
 
-![Figure](image-4.png)
+## Building Blocks
 
-Request 
+![Building Blocks](image-4.png)
 
-![Request details](image-5.png)
+## Request
 
-Response  
+![Request Details](image-5.png)
 
-![Response details](image-6.png)
+## Response
 
+![Response Details](image-6.png)
 
-URL Parts 
+## URL Parts
 
-![Parts](image-7.png)
+![URL Parts](image-7.png)
 
-In this URL on the end there is fragment which  are client-side and not sent to the server,
-which means they do not affect server-side behavior or requests.
+In this URL, at the end, there is a fragment that is client-side only and not sent to the server. This means it does not affect server-side behavior or requests. It is typically used to refer to a specific section within a webpage, such as a heading, an anchor, or an element with a particular ID.
 
-It's typically used to refer to a specific section within a webpage, such as a heading, an anchor, or an element with a particular ID. 
+### Example: TODO Application
 
-Example With a TODO Application
+![Example: TODO Application](image-8.png)
 
-![EG:-](image-8.png)
+## Headers
 
-REST API time 1:40:54
+### Request Headers
+
+![Types of Headers - Part 1](image-9.png)
+![Types of Headers - Part 2](image-10.png)
+
+### Response Headers
+
+![Types of Headers - Part 1](image-11.png)
+![Types of Headers - Part 2](image-12.png)
+
+## Status Codes
+
+![Status Codes - Part 1](image-13.png)
+![Status Codes - Part 2](image-14.png)
