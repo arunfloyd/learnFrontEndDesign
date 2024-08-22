@@ -107,22 +107,19 @@ In this URL, at the end, there is a fragment that is client-side only and not se
 
 ### We implement GraphQl check GraphQl folder for more details
 
-
-# gRPC 
+# gRPC
 
 gRPC - Google Remote Procedure Call
 
-## OverView 
+## OverView
 
 ![Overview](image-24.png)
-
 
 ## gRPC
 
 ![Flow 1](image-28.png)
 
 ![Flow 2](image-29.png)
-
 
 ## Protocol Buffer
 
@@ -147,3 +144,40 @@ gRPC - Google Remote Procedure Call
 ## Advantages And Disadvantages
 
 ![Ad vs Dis](image-36.png)
+
+# Communicating Technique
+
+ ## Popular Interview Question
+
+ ![interview](image-37.png)
+
+ ## OverView 
+
+ ![Overview](image-38.png)
+
+ ### Short Polling 
+  - Consitently asking the data is ready after completing give the data(Eg: Payment Transaction is sucessful)
+
+### Long Polling 
+ - After completing the entire data only the data will be given to the user
+
+### Websocket
+ -  Do not need to wait for the data to recieve you can add more requests to the server and keep repeating it ,a two way connection
+
+ ### SSE (Server Sent Event)
+
+ - Some events without your involvement actually go through but you got the data
+
+ ### Webhooks
+
+ - Predefined events at a particular events have completed
+
+## Short Polling
+
+- Frequently check for new notification by passing request in every 5 seconds 
+
+![Short Polling](image-39.png)
+
+Refer the Short Polling Folder and we created an example for it
+ 
+#THE END BEII
