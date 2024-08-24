@@ -147,45 +147,54 @@ gRPC - Google Remote Procedure Call
 
 # Communicating Technique
 
- ## Popular Interview Question
+## Popular Interview Question
 
- ![interview](image-37.png)
+![interview](image-37.png)
 
- ## OverView 
+## OverView
 
- ![Overview](image-38.png)
+![Overview](image-38.png)
 
- ### Short Polling 
-  - Consitently asking the data is ready after completing give the data(Eg: Payment Transaction is sucessful)
+### Short Polling
 
-### Long Polling 
- - After completing the entire data only the data will be given to the user
+- Consitently asking the data is ready after completing give the data(Eg: Payment Transaction is sucessful)
+
+### Long Polling
+
+- After completing the entire data only the data will be given to the user
 
 ### Websocket
- -  Do not need to wait for the data to recieve you can add more requests to the server and keep repeating it ,a two way connection
 
- ### SSE (Server Sent Event)
+- Do not need to wait for the data to recieve you can add more requests to the server and keep repeating it ,a two way connection
 
- - Some events without your involvement actually go through but you got the data
+### SSE (Server Sent Event)
 
- ### Webhooks
+- Some events without your involvement actually go through but you got the data
 
- - Predefined events at a particular events have completed
+### Webhooks
+
+- Predefined events at a particular events have completed
 
 ## Short Polling
 
-- Frequently check for new notification by passing request in every 5 seconds 
+- Frequently check for new notification by passing request in every 5 seconds
 
 ![Short Polling](image-39.png)
 
 - Refer the Short Polling Folder and we created an example for it
- 
 
- ## Long Polling
+## Long Polling
+
 - The request will be live on the server until a new update is available from the server
 
 ![Long Polling](image-41.png)
 
--Refer the folder Long Polling in the communication Techniques
+- Refer the folder Long Polling in the communication Techniques
 
+## Websocket
+
+![Web socket](image-43.png)
+
+- Refer the folder WebSocket in the communication techniques
+- Created a chat bot 
 #THE END BEII

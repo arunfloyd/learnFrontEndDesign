@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.IO Chat</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Courier New", Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+
+      #messages {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow-y: auto;
+        flex-grow: 1;
+        background: #fff;
+        border: 1px solid #ddd;
+      }
+
+      #messages > li {
+        padding: 1rem;
+        margin: 0.5rem 1rem;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+      }
+
+      #messages > li:nth-child(odd) {
+        background-color: #e0e0e0;
+      }
+
+      #form {
+        display: flex;
+        padding: 1rem;
+        background-color: #333;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      #input {
+        flex-grow: 1;
+        padding: 0.5rem;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        font-size: 1rem;
+      }
+
+      #input:focus {
+        outline: none;
+        border-color: #aaa;
+      }
+
+      #form > button {
+        background-color: #555;
+        border: none;
+        padding: 0.5rem 1rem;
+        margin-left: 0.5rem;
+        color: white;
+        font-size: 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #form > button:hover {
+        background-color: #444;
+      }
+
+      #form > button:active {
+        background-color: #222;
+      }
+
+      /* Scrollbar for messages */
+      #messages::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      #messages::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <form id="form">
+      <input id="input" autocomplete="off" placeholder="Type a message..." />
+      <button>Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = window.io();
+      const form = document.getElementById("form");
+      const input = document.getElementById("input");
+      const messages = document.getElementById("messages");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (input.value) {
+          console.log(input.value);
+          socket.emit("chat message", input.value);
+          input.value = "";
+        }
+      });
+
+      socket.on("chat message", (msg) => {
+        const item = document.createElement("li");
+        item.textContent = msg;
+        messages.appendChild(item);
+      });
+    </script>
+  </body>
+</html>
