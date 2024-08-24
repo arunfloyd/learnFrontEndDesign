@@ -178,6 +178,14 @@ gRPC - Google Remote Procedure Call
 
 ![Short Polling](image-39.png)
 
-Refer the Short Polling Folder and we created an example for it
+- Refer the Short Polling Folder and we created an example for it
  
+
+ ## Long Polling
+- The request will be live on the server until a new update is available from the server
+
+![Long Polling](image-41.png)
+
+-Refer the folder Long Polling in the communication Techniques
+
 #THE END BEII
