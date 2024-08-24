@@ -197,4 +197,12 @@ gRPC - Google Remote Procedure Call
 
 - Refer the folder WebSocket in the communication techniques
 - Created a chat bot 
+
+## Server Side Events
+
+![SSE](image-44.png)
+
+![Challenges](image-45.png)
+
+- Refer the folder Server sent Events in the communication techniques
 #THE END BEII
