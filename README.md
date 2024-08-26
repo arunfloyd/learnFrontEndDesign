@@ -196,7 +196,7 @@ gRPC - Google Remote Procedure Call
 ![Web socket](image-43.png)
 
 - Refer the folder WebSocket in the communication techniques
-- Created a chat bot 
+- Created a chat bot
 
 ## Server Side Events
 
@@ -205,4 +205,41 @@ gRPC - Google Remote Procedure Call
 ![Challenges](image-45.png)
 
 - Refer the folder Server sent Events in the communication techniques
+
+## Web Hooks
+
+![Web Hooks](image-47.png)
+
+![Automation ](image-46.png)
+
+- Refer the folder WebHooks in the communication techniques
+
+# Secuirty
+
+### OverView
+
+![OverView](image-48.png)
+
+### What is Covered
+
+![CoveredInThis](image-49.png)
+![Covered2](image-50.png)
+
+### Popular Interview Question
+
+![InterviewQstn](image-51.png)
+
+## Secuirty Overview
+
+![overview](image-52.png)
+
+## XSS (Cross site Scripting)
+
+![Flow of Attack](image-53.png)
+
+- Created two html files named example and example1 check on security > XSS > vulnerabilities folder
+
+![query which is to be passed](image-55.png)
+![Encode the URI](image-54.png)
+
 #THE END BEII
