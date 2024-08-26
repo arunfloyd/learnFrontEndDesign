@@ -236,10 +236,42 @@ gRPC - Google Remote Procedure Call
 ## XSS (Cross site Scripting)
 
 ![Flow of Attack](image-53.png)
+- Here we will discuss the vulnerabilities attack and mitigation for it
 
 - Created two html files named example and example1 check on security > XSS > vulnerabilities folder
 
-![query which is to be passed](image-55.png)
-![Encode the URI](image-54.png)
+- Example 1 : Simply pass the query params for the user name
+
+- Example 2 :User session hijacking , Pass the query params for the the user name but containing some vulnerability in it
+
+  ![query which is to be passed](image-55.png)
+  ![Encode the URI](image-54.png)
+
+- Example 3 : Unathorized activities , Pass the query params for the vulanerabilty and create a post
+  ![Query on last to pass ](image-56.png)
+  ![It pass the arguments to make the post also cookie is also passing so the authorization is being passed](image-57.png)
+
+- Example 4 : Capturing Keystrokes , it will monitor all the keys pressed
+  ![Code to inject](image-58.png)
+  ![Encoded the url above](image-59.png)
+  ![When the user press every key it passing to a url](image-60.png)
+
+- Example 5 : Stealing Critical information,
+  ![Url passed to inject](image-61.png) 
+  ![Encoded the url](image-62.png)
+  ![It took the entire html](image-63.png)
+
+- Example 5 : Phising the website
+  ![Code to phish](image-66.png)
+  ![Encode and Create a fake form and send to the url of hacker](image-64.png)  
+  ![A form have been created here](image-65.png)
+
+- Mitigation to avoid the vulnerability  
+  ![mitigation](image-67.png)
+  - Avoid Using eval
+
+  - CSP (Content Security Policy) Headers
+  ![how it helps](image-68.png)
+  - Check the mitigation folder 
 
 #THE END BEII
