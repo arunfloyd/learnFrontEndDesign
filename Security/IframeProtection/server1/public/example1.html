@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clickjacking Example</title>
+  </head>
+  <body>
+    <h1>Clickjacking Example</h1>
+    <p>
+      This webpage is designed to demonstrate clickjacking. To see the issue,
+      try clicking on the button below.
+    </p>
+    <!-- Connect Iframe to the original page -->
+    <iframe
+      src="http://localhost:3011/iframe-website1"
+      id="legit-iframe"
+    ></iframe>
+
+    <button id="overlay-button">Click Me!</button>
+
+    <style>
+      #legit-iframe {
+        opacity: 0.1;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data theft</title>
+    <script>
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+          expires = ";expires=" + date.toUTCString();
+        }
+
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+      }
+      setCookie("exampleCookie", "Hello,Cookie!", 7);
+    </script>
+  </head>
+
+  <body>
+    <h1>Data theft via Javascript</h1>
+    // Adding SandBox
+    <iframe
+      src="http://localhost:3011/iframe-website1"
+      sandbox="allow-same-origin"
+      id="legit-iframe"
+    ></iframe>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clickjacking Example</title>
+  </head>
+  <body>
+    <h1>Rendering Google in Iframe</h1>
+    <p>
+      This webpage is designed to demonstrate clickjacking. To see the issue,
+      try clicking on the button below.
+    </p>
+    <!-- Connect Iframe to the original page -->
+    <iframe
+      src="http://google.co.in"
+      id="legit-iframe"
+    ></iframe>
+
+   
+  </body>
+</html>

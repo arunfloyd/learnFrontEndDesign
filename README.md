@@ -236,6 +236,7 @@ gRPC - Google Remote Procedure Call
 ## XSS (Cross site Scripting)
 
 ![Flow of Attack](image-53.png)
+
 - Here we will discuss the vulnerabilities attack and mitigation for it
 
 - Created two html files named example and example1 check on security > XSS > vulnerabilities folder
@@ -257,7 +258,7 @@ gRPC - Google Remote Procedure Call
   ![When the user press every key it passing to a url](image-60.png)
 
 - Example 5 : Stealing Critical information,
-  ![Url passed to inject](image-61.png) 
+  ![Url passed to inject](image-61.png)
   ![Encoded the url](image-62.png)
   ![It took the entire html](image-63.png)
 
@@ -268,10 +269,42 @@ gRPC - Google Remote Procedure Call
 
 - Mitigation to avoid the vulnerability  
   ![mitigation](image-67.png)
+
   - Avoid Using eval
 
   - CSP (Content Security Policy) Headers
-  ![how it helps](image-68.png)
-  - Check the mitigation folder 
+    ![how it helps](image-68.png)
+  - Check the mitigation folder
 
+## IFRAME PROTECTION
+
+### Clickhijacking
+
+- Refer the folder security/iframe-protection
+
+![Parent Html file](image-69.png)
+
+![This is the iFrame Website to do vulnerable thigs](image-70.png)
+
+![With the use of iframe this parent can use the iframe website in it](image-71.png)
+
+![So giving some style to it it covers the iframe website under it](image-72.png)
+
+### Data Thefting
+
+![Overview](image-76.png)
+
+![There added two website on example2 and iframe2 added iframe into other](image-73.png)
+
+![In modern website data can not get by javascript but still there are such browser to get data of innerHTML or DOM](image-74.png)
+
+### Mitigation
+
+![We can't pass google search using iframe](image-75.png)
+
+![This csp can be used](image-78.png)
+
+![We can use Sandbox to say that doesn't execute any js in the iframe](image-77.png)
+
+![This all can do to protext from this like stuff](image-79.png)
 #THE END BEII
