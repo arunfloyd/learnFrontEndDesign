@@ -307,4 +307,69 @@ gRPC - Google Remote Procedure Call
 ![We can use Sandbox to say that doesn't execute any js in the iframe](image-77.png)
 
 ![This all can do to protext from this like stuff](image-79.png)
+
+## Secuirty Headers 
+
+![Over View](image-82.png)
+
+### X-Powered-By
+
+![Default our server is shown it is not goof](image-80.png)
+
+![So using middleware to removeheader](image-81.png)
+
+### Referrer- Policy
+
+- Its like leaking the url from move to one url to another url so we should handle it
+
+### X-Content-Type-Options
+
+- So there is a chance when client send image to server and inbetween the file have changed into something
+html or js it should be avoided
+
+### X-XSS-Protection
+- If we have done the proper CSP it can be avoided
+
+### HSTS (Strict Transport Security)
+- ![http into https ](image-83.png)
+
+![This will convert the http into https without getting into the server on the browser itself](image-84.png)
+
+## Client Side Storage 
+
+![Over View 1](image-87.png)
+
+### Session Management 
+
+- Here it set HttpOnly so it can not fetch through js code only through the http server
+![Session](image-88.png)
+
+- Storing data on the browser should be thinked twice
+
+![Creation of checksum](image-85.png)
+
+![CheckHowMuchIsLeft](image-86.png)
+
+## Secure Communication HTTPS
+
+![Benfits of http](image-89.png)
+
+## Dependency Security
+
+![To make sure the dependency is secure ](image-91.png)
+
+- To make the auditing easier we can dependabot.yml 
+
+![Custom hook to check the security scan](image-90.png)
+
+## Compliance and Regulations
+
+![1](image-92.png)
+![2](image-93.png)
+![3](image-94.png)
+![4](image-95.png)
+![5](image-96.png)
+
+# Input Validation and Sanitization
+
 #THE END BEII
