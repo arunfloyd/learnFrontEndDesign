@@ -370,6 +370,54 @@ html or js it should be avoided
 ![4](image-95.png)
 ![5](image-96.png)
 
-# Input Validation and Sanitization
+## Input Validation and Sanitization
+
+![To Check the validations](image-97.png)
+
+## SSRF 
+
+![The flow ](image-98.png)
+
+### Problems created by 
+
+![Unvalidated  input](image-100.png)
+
+![Lack of Whitelisting](image-101.png)
+
+![insufficent access control](image-102.png)
+
+![XML External Entity (XXE)](image-103.png)
+
+## Server Side Javascript Injection
+
+![Problems](image-104.png)
+
+![Attack Examples](image-105.png)
+
+### Solution for it
+
+![input validation](image-106.png)
+
+![user provided code](image-107.png)
+
+![using dangerous function](image-108.png)
+
+![Deserialization](image-109.png)
+
+## Feature policy and permission policy 
+
+![how it happens](image-111.png)
+
+![Enabled the permission policy](image-110.png)
+
+![Features](image-112.png)
+
+## SRI (Sub Resource Integrity)
+
+![integrity protection on the cdn](image-114.png)
+
+![Features](image-115.png)
+
+- Check and learn the permission policy from wesite 'https://permissions-policy-demo-glitch.me'
 
 #THE END BEII
