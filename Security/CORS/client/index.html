@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fetch with CORS Example</h1>
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="result"></div>
+    <script>
+      function fetchData() {
+        fetch(
+            // We can't access the data other than our origin or they allow 
+        //   "https://play.google.com/log?hasfast=true&auth=SAPISIDHASH+5d31165f8d6a98c2e7285f1fc5086392934db57d&authuser=0&format=json",
+          {
+            method: "GET",
+          }
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("result").innerHTML = JSON.stringify(data);
+          });
+      }
+    </script>
+  </body>
+</html>
